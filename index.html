@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet">
+
+    <title>Moyo Connect & Immigration Services</title>
+    <style>
+    /* ---------- RESET ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a, button {
+  font-family: 'Open Sans', sans-serif;
+}
+    body {
+     font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background-color: #f7f4ef;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 80px 15%;
+    }
+
+    h1, h2, h3 {
+      color: #3b2f2f;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+       /* Hero Section */
+    .hero {
+      position: relative;
+      /* height: 100vh; */
+      background: linear-gradient(
+          rgba(10, 10, 30, 0.7),
+          rgba(10, 10, 30, 0.7)
+        ),
+        url("images/banner.png")
+        center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 15% 6%;
+          position: relative;
+    }
+
+    .hero-content {
+      max-width: 100%;
+      width: 600px;
+    }
+
+    /* Logo + Title */
+    .logo-section {
+      display: flex;
+      align-items: center;
+      position: relative;
+    top: 0px;
+    margin-bottom: 10px;
+    }
+.logo-section img {
+    width: 220px;
+    height: 250px;
+    margin-right: 15px;
+   
+}
+    .logo-section .text {
+      font-size:26px;
+        font-family: "YACgEUFdPdA 0", auto;
+      letter-spacing: 1px;
+      color: rgb(205, 173, 125);
+      line-height: 1.2;
+      padding-left: 50px;
+      font-weight: 500;
+    }
+
+    /* Headings and Text */
+    .hero h1 {
+      font-size: 60px;
+      color: rgb(205, 173, 125);
+      font-weight: 500;
+      margin-bottom: 50px;
+      line-height: 1.1;
+         
+    }
+    .img_text{
+         position: relative;
+    left: 100px;
+    top: 0px;
+    font-family: 'Open Sans';
+    margin-bottom: 50px;
+    }
+
+    .hero p {
+          font-size: 28px;
+    color: rgb(238, 234, 214);
+    margin-bottom: 50px;
+    line-height: 1.3;
+    }
+
+    /* Button */
+    .btn_type .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: rgb(205, 173, 125);
+      color: #1a1a1a;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.3s ease;
+      letter-spacing: 1px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .hero .btn:hover {
+      background-color: #d4a94e;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        text-align: center;
+        justify-content: center;
+        padding: 0 5%;
+      }
+
+      .logo-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo-section img {
+        margin-bottom: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* ---------- ABOUT SECTION ---------- */
+    .about {
+  display: flex;
+  align-items: center; /* Vertically aligns text and image */
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 15%;
+  background-color: #f9f9f9; /* optional */
+}
+
+.about .text {
+  flex: 1;
+}
+
+.about .text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a2147; /* your theme color */
+  line-height: 1.3;
+}
+
+.about .text p {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about .text .btn {
+  display: inline-block;
+  background-color: #CDAD7D;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.about .text .btn:hover {
+  background-color: #b8966c;
+}
+
+.about .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.about .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+    /* ---------- EXPERTISE SECTION ---------- */
+    .expertise {
+          background-image: linear-gradient(45deg, #f0f1f5, rgba(28, 39, 48, .5));
+      padding: 0 15%;
+    }
+    .expertise h2{
+        font-size: 50px;
+            color: rgb(34, 35, 68);
+    }
+
+    .expertise-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap:  40px;
+    }
+
+    .expertise-box {
+      background: rgb(205, 173, 125);
+      padding: 30px;
+      flex: 1 1 45%;
+     }
+    
+    .expertise-box ul {
+      list-style: disc inside;
+      font-size: 27px;
+      color: rgb(34, 35, 68);
+    /* font-weight: 600; */
+    }
+
+    /* ---------- SERVICES SECTION ---------- */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .services .image {
+      flex: 1 1 40%;
+    }
+
+    .services .list {
+      flex: 1 1 50%;
+    }
+
+    .services ul {
+      list-style: none;
+    }
+
+    .services li {
+      margin-bottom: 15px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .services li::before {
+      content: "🗎";
+      position: absolute;
+      left: 0;
+    }
+
+    /* ---------- CONTACT SECTION ---------- */
+    .moyo-footer {
+      background-color: #f5f2ec;
+      color: #1f1f1f;
+      font-family: 'Open Sans', sans-serif;
+      padding: 60px 15%;
+    }
+
+    .moyo-footer h3 {
+      font-family: 'Playfair Display', serif;
+      color: #1f1f1f;
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+
+    .moyo-footer p {
+      color: #1f1f1f;
+      font-size: 20px;
+    }
+
+    .moyo-footer .days {
+      color: #c2a264;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .footer-content {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .contact-section{
+      font-family: "Poppins", sans-serif;
+      color: #1b1b2f;
+      margin-bottom: 30px;
+    }
+    .contact-section h3{
+      font-family: "Playfair Display", serif;
+      color: #1b1b2f;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .contact-section p{
+        display: flex;
+        align-items: center; /* ✅ aligns icon and text vertically */
+        margin: 8px 0 22px 0;
+        font-size: 20px;
+        gap: 22px;
+    }
+    .contact-section img {
+      height: 33px;
+      width: 33px;
+      margin-right: 10px;
+      filter: invert(77%) sepia(12%) saturate(813%) hue-rotate(353deg)
+        brightness(90%) contrast(87%); /* changes icon color to #CDAD7D */
+    }
+
+    .social-section {
+      margin-top: 40px;
+      font-family: "Poppins", sans-serif;
+      color: #1b1b2f;
+    }
+
+    .social-header {
+      display: flex;
+      align-items: center;
+      gap: 15px; /* space between heading and icons */
+    }
+
+    .social-header h3 {
+      font-family: "Playfair Display", serif;
+      color: #1b1b2f;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  height: 28px;
+  width: 28px;
+  filter: brightness(0) saturate(100%) invert(77%) sepia(12%) saturate(813%) hue-rotate(353deg) brightness(90%) contrast(87%);
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+    .social-section p {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #444;
+        font-weight: 400;
+    }
+
+    .hours-section h3{
+      font-family: "Playfair Display", serif;
+      color: #1b1b2f;
+      font-size: 40px;
+      margin-bottom: 15px;
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      color: #c2a264;
+      border: 1.5px solid #c2a264;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #c2a264;
+      color: white;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ---------- SCROLL ANIMATIONS ---------- */
+    .hidden {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-out;
+    }
+    .services h2 {
+    font-size: 50px;
+    font-family: 'Open Sans';
+    color: rgb(34, 35, 68);
+    font-weight: 500;
+}
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 100px 5%;
+        text-align: center;
+      }
+
+      .about, .expertise-content, .services {
+        flex-direction: column;
+      }
+
+      .about .text, .about .image,
+      .services .image, .services .list {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+  </head>
+  <body>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="logo-section">
+          <img src="images/logo.png" alt="Moyo Connect Logo">
+          <!-- Replace with your logo -->
+          <div class="text">
+            MOYO CONNECT & <br> IMMIGRATION SERVICES
+          </div>
+        </div>
+        <div class="img_text btn_type">
+          <h1>Top-notch Australian<br>immigration services</h1>
+          <p>No matter the challenge, our team of immigration lawyers in
+            Melbourne will support you at every step of the way.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about hidden">
+      <div class="text btn_type">
+        <h2>How we deal with the ever-changing Australian immigration law</h2>
+        <p>Whatever your immigration challenges, a consultation with our
+          immigration lawyers is the best starting point. We can meet in person,
+          conduct a video call, or speak over the phone.</p>
+        <a href="#" class="btn">Get In Touch</a>
+      </div>
+      <div class="image">
+        <img src="images/about.jpg" alt="Lawyer">
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise hidden">
+      <h2>We have sound expertise in:</h2>
+      <div class="expertise-content">
+        <div class="expertise-box">
+          <ul>
+            <li><b>Partner visa</b>
+              <p>Partner visas that grant spouses and de facto partners of
+                Australian citizens or permanent residents the right to reside
+                in Australia.</p>
+            </li>
+            <li><b>Parent and family visas</b>
+              <p>Parent and family visas that reunite parents and relatives with
+                their Australian citizen or permanent resident family
+                members.</p>
+            </li>
+            <li><b>Work and skilled visas</b>
+              <p>Work and skilled visas that enable qualified professionals and
+                tradespeople to live and work in Australia.</p>
+            </li>
+            <li><b>Protection visas</b>
+              <p>Protection visas that allow those eligible as refugees to seek
+                asylum and live, study and work in Australia.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="expertise-box" style="background: none;">
+          <ul>
+            <li><b>Appeals, refusal and visa <br>cancellation</b>
+              <p>We assist with appeals, cancellations, and refusals to ensure
+                your migration applications are reviewed and reconsidered.</p>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services hidden">
+      <div class="image">
+        <img src="images/services.jpg" alt="Handshake">
+      </div>
+      <div class="list">
+        <h2>Our Services</h2>
+        <p>We help individuals and families with:</p>
+        <ul>
+          <li>Visa applications</li>
+          <li>Strategy and general immigration advice</li>
+          <li>Visa cancellation, refusal and appeal</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="moyo-footer">
+      <div class="footer-content">
+        <div class="contact-section">
+          <h3>Contact Us</h3>
+          <p> <img src="images/location.png" alt> <span>Melbourne -
+              Victoria</span></p>
+          <p> <img src="images/phone.png" alt> +61 407 600 995</p>
+          <p> <img src="images/email.png" alt> moyoconnectug@gmail.com</p>
+        </div>
+
+        <div class="hours-section">
+          <h3>Office Hours</h3>
+          <p class="days">Monday to Friday</p>
+          <p>9:00 am to 6:00 pm</p>
+          <p class="days">Saturday and Sunday</p>
+          <p>9:00 am to 3:00 pm</p>
+        </div>
+
+        <div class="social-section">
+          <div class="social-header">
+            <h3>Follow us online</h3>
+            <div class="social-icons">
+              <a href="#"><img src="images/facebook.png" alt=""></a>
+              <a href="#"><img src="images/twitter.png" alt=""></a>
+              <a href="#"><img src="images/instagram.png" alt=""></a>
+            </div>
+          </div>
+
+          <p>This is an accessible workplace. Persons with disabilities are
+            welcome to apply.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ---------- SCROLL ANIMATION SCRIPT ---------- -->
+    <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach(el => observer.observe(el));
+  </script>
+
+  </body>
+</html>
