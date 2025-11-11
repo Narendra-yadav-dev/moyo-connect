@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Open+Sans:wght@400;500&display=swap"
-            rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet">
 
-        <title>Moyo Connect & Immigration Services</title>
-        <style>
+    <title>Moyo Connect & Immigration Services</title>
+    <style>
     /* ---------- RESET ---------- */
     * {
       margin: 0;
@@ -127,31 +127,6 @@ p, a, button {
       background-color: #d4a94e;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero {
-        text-align: center;
-        justify-content: center;
-        padding: 0 5%;
-      }
-
-      .logo-section {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .logo-section img {
-        margin-bottom: 10px;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 0.95rem;
-      }
-    }
 
     /* ---------- ABOUT SECTION ---------- */
     .about {
@@ -466,166 +441,518 @@ p, a, button {
     }
 
     /* ---------- RESPONSIVE ---------- */
-    @media (max-width: 768px) {
-      .hero {
-        padding: 100px 5%;
-        text-align: center;
-      }
+   @media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    padding: 8% 10%;
+    text-align: center;
+  }
 
-      .about, .expertise-content, .services {
-        flex-direction: column;
-      }
+  .logo-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-      .about .text, .about .image,
-      .services .image, .services .list {
-        flex: 1 1 100%;
-      }
-    }
+  .logo-section img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .logo-section .text {
+    padding-left: 0;
+  }
+
+  .img_text{
+    position: relative;
+    left: 0;
+    top: 0px;
+    font-family: 'Open Sans';
+    margin-bottom: 50px;
+  }
+
+  .about .text{
+    flex: 1;
+    padding: 80px 10% 0 10%;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .about,
+  .services,
+  .expertise-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .about .image,
+  .services .image {
+    padding: 0;
+    justify-content: center;
+  }
+  .about .image img {
+    width: 85%;
+    height: auto;
+    padding-left: 0;
+    margin-left: 60px;
+  }
+  .services .image img {
+    width: 85%;
+    height: 600px;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .services ul {
+    list-style: none;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+  .expertise {
+      padding: 0 8%;
+  }
+  .expertise h2 {
+    font-size: 50px;
+    color: rgb(34, 35, 68);
+  }
+  .expertise-box
+ {
+    background: rgb(205, 173, 125);
+    padding: 30px;
+    flex: 1 1 45%;
+    text-align: start;
+}
+}
+
+/* ------------------------------
+   MOBILE (<=768px)
+------------------------------ */
+@media (max-width: 767px) {
+  .hero {
+    padding: 8% 10%;
+    text-align: center;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-section img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .logo-section .text {
+    padding-left: 0;
+    margin-right: 30px;
+  }
+  .img_text{
+    position: relative;
+    left: 0;
+    top: 0px;
+    font-family: 'Open Sans';
+    margin-bottom: 50px;
+    margin-right: 30px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .btn_type .btn {
+    width: auto;
+    padding: 10px 25px;
+  }
+
+   .about {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    text-align: center;
+  }
+
+  .about .text {
+    order: 1; /* show text first */
+    padding: 50px 8%;
+    margin-right: 30px;
+  }
+
+  .about .image {
+    order: 2; /* show image after text */
+    display: flex;
+    justify-content: center;
+  }
+
+  .about .image img {
+    width: 90%;
+    height: auto;
+    margin-left: 80px;
+  }
+
+  .services h2 {
+    font-size: 36px;
+  }
+
+  .services .list {
+    flex: 1 1 100%;
+    padding: 0 60px 0 30px;
+  }
+
+  .services ul {
+    margin-top: 20px;
+  }
+
+  .services li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .services li::before {
+    font-size: 28px;
+  }
+  .services .image {
+      flex: 1 1 40%;
+  padding: 8% 0 0 15%;
+  }
+  .services .image img {
+    width: 250px;
+    height: 251px;
+    object-fit: cover;
+  }
+
+  .expertise h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-right: 30px;
+  }
+  .expertise-box {
+    margin-right: 30px;
+  }
+  .expertise-box ul {
+    font-size: 20px;
+  }
+
+  .moyo-footer {
+    padding: 50px 8%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-section h3,
+  .hours-section h3,
+  .social-header h3 {
+    font-size: 28px;
+  }
+
+  .contact-section p,
+  .social-section p,
+  .hours-section p {
+    font-size: 18px;
+  }
+
+  .social-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ------------------------------
+   SMALL PHONES (<=480px)
+------------------------------ */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .about .text h2 {
+    font-size: 22px;
+  }
+
+  .about .text p {
+    font-size: 15px;
+  }
+
+  .services h2 {
+    font-size: 28px;
+  }
+
+  .services li {
+    font-size: 15px;
+  }
+
+  .expertise h2 {
+    font-size: 28px;
+  }
+
+  .expertise-box ul {
+    font-size: 16px;
+  }
+
+  .contact-section h3,
+  .hours-section h3,
+  .social-header h3 {
+    font-size: 24px;
+  }
+
+  .contact-section p,
+  .social-section p {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1351px) and (max-width: 1900px) {
+  .hero {
+    position: relative;
+    /* height: 100vh; */
+    background: linear-gradient(rgba(10, 10, 30, 0.7), rgba(10, 10, 30, 0.7)), url(images/banner.png) center / cover no-repeat;
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15% 6%;
+    position: relative;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    width: 600px;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+  .about {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+.expertise {
+    background-image: linear-gradient(45deg, #FBFBFB, #9B9B9B);
+    padding: 0 15%;
+}
+.services {
+    display: flex
+;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+  .moyo-footer {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .about .text,
+  .services .list {
+    padding-right: 8%;
+            margin-bottom: 30px;
+  }
+
+  .about .text h2,
+  .services h2,
+  .expertise h2 {
+    font-size: 48px;
+  }
+
+  .about .text p,
+  .services p {
+    font-size: 19px;
+  }
+
+  .about .image img,
+  .services .image img {
+    width: 92%;
+    height: auto;
+  }
+
+  .moyo-footer {
+    padding: 70px 16%;
+  }
+}
   </style>
-    </head>
-    <body>
+  </head>
+  <body>
 
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="logo-section">
-                    <img src="images/logo.png" alt="Moyo Connect Logo">
-                    <!-- Replace with your logo -->
-                    <div class="text">
-                        MOYO CONNECT & <br> IMMIGRATION SERVICES
-                    </div>
-                </div>
-                <div class="img_text btn_type">
-                    <h1 class="hidden">Top-notch Australian<br>immigration
-                        services</h1>
-                    <p class="hidden">No matter the challenge, our team of
-                        immigration lawyers in
-                        Melbourne will support you at every step of the way.</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="logo-section">
+          <img src="images/logo.png" alt="Moyo Connect Logo">
+          <!-- Replace with your logo -->
+          <div class="text">
+            MOYO CONNECT & <br> IMMIGRATION SERVICES
+          </div>
+        </div>
+        <div class="img_text btn_type">
+          <h1 class="hidden">Top-notch Australian<br>immigration
+            services</h1>
+          <p class="hidden">No matter the challenge, our team of
+            immigration lawyers in
+            Melbourne will support you at every step of the way.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="text btn_type">
+        <h2>How we deal with the ever changing Australian immigration
+          law</h2>
+        <p>Whatever your immigration challenges, a consultation with our
+          immigration lawyers is the best starting point. We can meet
+          in person,
+          conduct a video call, or speak over the phone.</p>
+        <a href="#" class="btn">Get In Touch</a>
+      </div>
+      <div class="image">
+        <img src="images/about.jpg" alt="Lawyer">
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise">
+      <h2 class="hidden">We have sound expertise in:</h2>
+      <div class="expertise-content">
+        <div class="expertise-box">
+          <ul>
+            <li><b>Partner visa</b>
+              <p>Partner visas that grant spouses and de facto
+                partners of
+                Australian citizens or permanent residents the
+                right to reside
+                in Australia.</p>
+            </li>
+            <li><b>Parent and family visas</b>
+              <p>Parent and family visas that reunite parents and
+                relatives with
+                their Australian citizen or permanent resident
+                family
+                members.</p>
+            </li>
+            <li><b>Work and skilled visas</b>
+              <p>Work and skilled visas that enable qualified
+                professionals and
+                tradespeople to live and work in Australia.</p>
+            </li>
+            <li><b>Protection visas</b>
+              <p>Protection visas that allow those eligible as
+                refugees to seek
+                asylum and live, study and work in
+                Australia.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="expertise-box" style="background: none;">
+          <ul>
+            <li><b>Appeals, refusal and visa <br>cancellation</b>
+              <p>We assist with appeals, cancellations, and
+                refusals to ensure
+                your migration applications are reviewed and
+                reconsidered.</p>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+      <div class="image">
+        <img src="images/services.jpg" alt="Handshake">
+      </div>
+      <div class="list">
+        <h2 class="hidden">Our Services</h2>
+        <p>We help individuals and families with:</p>
+        <ul class="hidden">
+          <li>Visa applications</li>
+          <li>Strategy and general immigration advice</li>
+          <li>Visa cancellation, refusal and appeal</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="moyo-footer">
+      <div class="footer-content">
+        <div class="contact-section">
+          <h3 class="hidden">Contact Us</h3>
+          <p class="hidden"> <img src="images/location.png" alt>
+            <span>Melbourne -
+              Victoria</span></p>
+          <p class="hidden"> <img src="images/phone.png" alt> +61 407
+            600 995</p>
+          <p class="hidden"> <img src="images/email.png" alt>
+            moyoconnectug@gmail.com</p>
+        </div>
+
+        <div class="hours-section">
+          <h3 class="hidden">Office Hours</h3>
+          <p class="days hidden">Monday to Friday</p>
+          <p class="hidden">9:00 am to 6:00 pm</p>
+          <p class="days hidden">Saturday and Sunday</p>
+          <p class="hidden">9:00 am to 3:00 pm</p>
+        </div>
+
+        <div class="social-section">
+          <div class="social-header">
+            <h3>Follow us online</h3>
+            <div class="social-icons">
+              <a href="#"><img src="images/facebook.png" alt></a>
+              <a href="#"><img src="images/twitter.png" alt></a>
+              <a href="#"><img src="images/instagram.png" alt></a>
             </div>
-        </section>
+          </div>
 
-        <!-- ABOUT -->
-        <section class="about">
-            <div class="text btn_type">
-                <h2>How we deal with the ever changing Australian immigration
-                    law</h2>
-                <p>Whatever your immigration challenges, a consultation with our
-                    immigration lawyers is the best starting point. We can meet
-                    in person,
-                    conduct a video call, or speak over the phone.</p>
-                <a href="#" class="btn">Get In Touch</a>
-            </div>
-            <div class="image">
-                <img src="images/about.jpg" alt="Lawyer">
-            </div>
-        </section>
+          <p>This is an accessible workplace. Persons with
+            disabilities are
+            welcome to apply.</p>
+        </div>
+      </div>
+    </footer>
 
-        <!-- EXPERTISE -->
-        <section class="expertise">
-            <h2 class="hidden">We have sound expertise in:</h2>
-            <div class="expertise-content">
-                <div class="expertise-box">
-                    <ul>
-                        <li><b>Partner visa</b>
-                            <p>Partner visas that grant spouses and de facto
-                                partners of
-                                Australian citizens or permanent residents the
-                                right to reside
-                                in Australia.</p>
-                        </li>
-                        <li><b>Parent and family visas</b>
-                            <p>Parent and family visas that reunite parents and
-                                relatives with
-                                their Australian citizen or permanent resident
-                                family
-                                members.</p>
-                        </li>
-                        <li><b>Work and skilled visas</b>
-                            <p>Work and skilled visas that enable qualified
-                                professionals and
-                                tradespeople to live and work in Australia.</p>
-                        </li>
-                        <li><b>Protection visas</b>
-                            <p>Protection visas that allow those eligible as
-                                refugees to seek
-                                asylum and live, study and work in
-                                Australia.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="expertise-box" style="background: none;">
-                    <ul>
-                        <li><b>Appeals, refusal and visa <br>cancellation</b>
-                            <p>We assist with appeals, cancellations, and
-                                refusals to ensure
-                                your migration applications are reviewed and
-                                reconsidered.</p>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section class="services">
-            <div class="image">
-                <img src="images/services.jpg" alt="Handshake">
-            </div>
-            <div class="list">
-                <h2 class="hidden">Our Services</h2>
-                <p>We help individuals and families with:</p>
-                <ul class="hidden">
-                    <li>Visa applications</li>
-                    <li>Strategy and general immigration advice</li>
-                    <li>Visa cancellation, refusal and appeal</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="moyo-footer">
-            <div class="footer-content">
-                <div class="contact-section">
-                    <h3 class="hidden">Contact Us</h3>
-                    <p class="hidden"> <img src="images/location.png" alt>
-                        <span>Melbourne -
-                            Victoria</span></p>
-                    <p class="hidden"> <img src="images/phone.png" alt> +61 407
-                        600 995</p>
-                    <p class="hidden"> <img src="images/email.png" alt>
-                        moyoconnectug@gmail.com</p>
-                </div>
-
-                <div class="hours-section">
-                    <h3 class="hidden">Office Hours</h3>
-                    <p class="days hidden">Monday to Friday</p>
-                    <p class="hidden">9:00 am to 6:00 pm</p>
-                    <p class="days hidden">Saturday and Sunday</p>
-                    <p class="hidden">9:00 am to 3:00 pm</p>
-                </div>
-
-                <div class="social-section">
-                    <div class="social-header">
-                        <h3>Follow us online</h3>
-                        <div class="social-icons">
-                            <a href="#"><img src="images/facebook.png" alt></a>
-                            <a href="#"><img src="images/twitter.png" alt></a>
-                            <a href="#"><img src="images/instagram.png" alt></a>
-                        </div>
-                    </div>
-
-                    <p>This is an accessible workplace. Persons with
-                        disabilities are
-                        welcome to apply.</p>
-                </div>
-            </div>
-        </footer>
-
-        <!-- ---------- SCROLL ANIMATION SCRIPT ---------- -->
-        <script>
+    <!-- ---------- SCROLL ANIMATION SCRIPT ---------- -->
+    <script>
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -637,5 +964,5 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(el => observer.observe(el));
 </script>
-    </body>
+  </body>
 </html>
