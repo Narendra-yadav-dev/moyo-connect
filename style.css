@@ -1,0 +1,894 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+p,
+a,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f7f4ef;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    color: #3b2f2f;
+}
+
+/* ---------- HERO SECTION ---------- */
+/* Hero Section */
+.hero {
+    position: relative;
+    /* height: 100vh; */
+    background: linear-gradient(rgba(10, 10, 30, 0.7),
+            rgba(10, 10, 30, 0.7)),
+        url("images/banner.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15% 6%;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 100%;
+    width: 600px;
+}
+
+/* Logo + Title */
+.logo-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    margin-bottom: 10px;
+}
+
+.logo-section img {
+    width: 220px;
+    height: 250px;
+    margin-right: 15px;
+
+}
+
+.logo-section .text {
+    font-size: 26px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    color: rgb(205, 173, 125);
+    line-height: 1.2;
+    padding-left: 50px;
+    font-weight: 500;
+}
+
+/* Headings and Text */
+.hero h1 {
+    font-size: 60px;
+    color: rgb(205, 173, 125);
+    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 1.1;
+
+}
+
+.img_text {
+    position: relative;
+    left: 100px;
+    top: 0px;
+    font-family: 'Open Sans';
+    margin-bottom: 50px;
+}
+
+.hero p {
+    font-size: 28px;
+    color: rgb(238, 234, 214);
+    margin-bottom: 50px;
+    line-height: 1.3;
+}
+
+/* Button */
+.btn_type .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(205, 173, 125);
+    color: #1a1a1a;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+    letter-spacing: 1px;
+    width: 200px;
+    text-align: center;
+}
+
+.hero .btn:hover {
+    background-color: #d4a94e;
+}
+
+
+/* ---------- ABOUT SECTION ---------- */
+.about {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+
+.about .text {
+    flex: 1;
+    padding: 80px 10% 0 20%;
+    letter-spacing: -0.04em;
+}
+
+.about .text h2 {
+    font-size: 31px;
+    margin-bottom: 20px;
+    color: #1a2147;
+    line-height: 1.2;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.about .text p {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+}
+
+.about .text .btn {
+    display: inline-block;
+    background-color: #CDAD7D;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+    margin-top: 100px;
+}
+
+.about .text .btn:hover {
+    background-color: #b8966c;
+}
+
+.about .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 80px 22% 0 0;
+}
+
+.about .image img {
+    width: 488.842px;
+    height: 688.51px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ---------- EXPERTISE SECTION ---------- */
+.expertise {
+    background-image: linear-gradient(45deg, #FBFBFB, #9B9B9B);
+    padding: 0 15%;
+}
+
+.expertise h2 {
+    font-size: 50px;
+    color: rgb(34, 35, 68);
+}
+
+.expertise-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.expertise-box {
+    background: rgb(205, 173, 125);
+    padding: 30px;
+    flex: 1 1 45%;
+}
+
+.expertise-box ul {
+    list-style: disc inside;
+    font-size: 27px;
+    color: rgb(34, 35, 68);
+    /* font-weight: 600; */
+}
+
+/* ---------- SERVICES SECTION ---------- */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.services .image {
+    flex: 1 1 40%;
+    padding: 8% 0 0 20%;
+}
+
+.services .image img {
+    width: 500px;
+    height: 512px;
+    object-fit: cover;
+}
+
+.services .list {
+    flex: 1 1 50%;
+    padding: 8% 0 0 2%;
+}
+
+.services ul {
+    list-style: none;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+
+.services li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* keeps icon and text in one line */
+    gap: 15px;
+    /* space between icon and text */
+    margin-bottom: 30px;
+    font-size: 18px;
+    /* slightly smaller text */
+    color: #222;
+    line-height: 1.4;
+    transition: all 0.3s ease;
+}
+
+.services li::before {
+    content: "🗎";
+    font-size: 36px;
+    /* larger icon */
+    color: #CDAD7D;
+    /* icon color */
+    flex-shrink: 0;
+    /* prevent icon from resizing */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.services li:hover {
+    color: #1a1a1a;
+    transform: translateX(5px);
+}
+
+.services li:hover::before {
+    transform: scale(1.15);
+    color: #b8966c;
+    /* hover color */
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.footer {
+    background-color: #E7E7E7;
+    /* Light beige background */
+    color: #4b443c;
+    /* Main body text color */
+    padding: 60px 0;
+}
+
+.footer-container {
+    max-width: 1550px;
+    /* Standard content width */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 0 20px;
+    display: flex;
+    /* Enable Flexbox for column layout */
+    justify-content: space-between;
+    /* Space out the columns */
+}
+
+.footer-column {
+    flex-basis: 30%;
+    /* Give each column roughly equal width */
+    padding: 0 10px;
+}
+
+/* Headings */
+.footer h3 {
+    font-family: serif;
+    /* Use a serif font to match the image */
+    color: #2b2649;
+    /* Dark blue/purple for headings */
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* --- Contact Us Specific Styling --- */
+
+.contact-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-us li {
+    display: flex;
+    /* Align icon and text */
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-us .icon {
+    margin-right: 30px;
+    font-size: 20px;
+    /* Use a larger font for the emoji icons */
+}
+
+/* --- Office Hours Specific Styling --- */
+
+.office-hours p {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.office-hours .day-group {
+    color: #CDAD7D;
+    /* Gold/brown color for days */
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+/* --- Follow Us Specific Styling --- */
+
+.follow-online .accessibility-note {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    /* space between circles */
+}
+
+.social-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #CCAC7D;
+    /* circle background */
+    border: 1.5px solid #000000;
+    box-shadow: 0 0 0 3px #CCAC7D, 0 0 0 5px #CCAC7D;
+    /* embossed effect */
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* ICON IMAGES */
+.social-circle img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(37%) saturate(388%) hue-rotate(5deg) brightness(96%) contrast(89%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    background-color: #b9985f;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 3px #b9985f, 0 0 0 5px #b9985f;
+    filter: brightness(1.2);
+    transform: scale(1.15);
+}
+
+
+/* ---------- SCROLL ANIMATIONS ---------- */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+}
+
+.services h2 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(34, 35, 68);
+    font-weight: normal;
+}
+
+.services p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(34, 35, 68);
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        padding: 8% 10%;
+        text-align: center;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-section img {
+        width: 180px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .logo-section .text {
+        padding-left: 0;
+    }
+
+    .img_text {
+        position: relative;
+        left: 0;
+        top: 0px;
+        font-family: 'Open Sans';
+        margin-bottom: 50px;
+    }
+
+    .about .text {
+        flex: 1;
+        padding: 80px 10% 0 10%;
+        letter-spacing: -0.04em;
+        margin-bottom: 50px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .about,
+    .services,
+    .expertise-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    .about .image,
+    .services .image {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .about .image img {
+        width: 85%;
+        height: auto;
+        padding-left: 0;
+        margin-left: 60px;
+    }
+
+    .services .image img {
+        width: 85%;
+        height: 600px;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .services ul {
+        list-style: none;
+        margin-top: 50px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0;
+    }
+
+    .expertise {
+        padding: 0 8%;
+    }
+
+    .expertise h2 {
+        font-size: 50px;
+        color: rgb(34, 35, 68);
+    }
+
+    .expertise-box {
+        background: rgb(205, 173, 125);
+        padding: 30px;
+        flex: 1 1 45%;
+        text-align: start;
+    }
+}
+
+/* ------------------------------
+   MOBILE (<=768px)
+------------------------------ */
+@media (max-width: 767px) {
+    .hero {
+        padding: 8% 10%;
+        text-align: center;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-section img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 30px;
+    }
+
+    .logo-section .text {
+        padding-left: 0;
+        margin-right: 30px;
+    }
+
+    .img_text {
+        position: relative;
+        left: 0;
+        top: 0px;
+        font-family: 'Open Sans';
+        margin-bottom: 50px;
+        margin-right: 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .btn_type .btn {
+        width: auto;
+        padding: 10px 25px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .text {
+        order: 1;
+        padding: 50px 8%;
+        margin-right: 30px;
+    }
+
+    .about .image {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .image img {
+        width: 90%;
+        height: auto;
+        margin-left: 80px;
+    }
+
+    .services h2 {
+        font-size: 36px;
+    }
+
+    .services .list {
+        flex: 1 1 100%;
+        padding: 0 60px 0 30px;
+    }
+
+    .services ul {
+        margin-top: 20px;
+    }
+
+    .services li {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .services li::before {
+        font-size: 28px;
+    }
+
+    .services .image {
+        flex: 1 1 40%;
+        padding: 8% 0 0 15%;
+    }
+
+    .services .image img {
+        width: 250px;
+        height: 251px;
+        object-fit: cover;
+    }
+
+    .expertise h2 {
+        font-size: 38px;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .expertise-box ul {
+        font-size: 20px;
+    }
+
+    /* Footer Responsive */
+    .footer {
+        padding: 50px 8%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-column h3 {
+        font-size: 28px;
+    }
+
+    .contact-us li,
+    .office-hours p,
+    .follow-online p {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .social-circle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-circle img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* ------------------------------
+   SMALL PHONES (<=480px)
+------------------------------ */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about .text h2 {
+        font-size: 22px;
+    }
+
+    .about .text p {
+        font-size: 15px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .services li {
+        font-size: 15px;
+    }
+
+    .expertise h2 {
+        font-size: 28px;
+    }
+
+    .expertise-box ul {
+        font-size: 16px;
+    }
+
+    /* Footer Small Devices */
+    .footer {
+        padding: 35px 5%;
+    }
+
+    .footer-column h3 {
+        font-size: 22px;
+    }
+
+    .contact-us li,
+    .office-hours p,
+    .follow-online p {
+        font-size: 15px;
+    }
+
+    .social-circle {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-circle img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+/* ------------------------------
+   DESKTOP LARGE (1351px - 1900px)
+------------------------------ */
+@media (min-width: 1351px) and (max-width: 1900px) {
+    .hero {
+        background: linear-gradient(rgba(10, 10, 30, 0.7), rgba(10, 10, 30, 0.7)), url(images/banner.png) center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 15% 6%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        width: 600px;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .hero p {
+        font-size: 24px;
+    }
+
+    .about {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 70px;
+    }
+
+    .expertise {
+        background-image: linear-gradient(45deg, #FBFBFB, #9B9B9B);
+        padding: 0 15%;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .about .text,
+    .services .list {
+        padding-right: 8%;
+        margin-bottom: 30px;
+    }
+
+    .about .text h2,
+    .services h2,
+    .expertise h2 {
+        font-size: 48px;
+    }
+
+    .about .text p,
+    .services p {
+        font-size: 19px;
+    }
+
+    .about .image img,
+    .services .image img {
+        width: 92%;
+        height: auto;
+    }
+
+    /* Footer large screen */
+    .footer {
+        margin: 0 auto;
+        padding: 70px 16%;
+    }
+}
+
+/* ------------------------------
+   MID DESKTOP (1024px - 1351px)
+------------------------------ */
+@media (min-width: 1024px) and (max-width: 1351px) {
+    .hero {
+        padding: 5% 12%;
+        background-size: cover;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .logo-section img {
+        width: 200px;
+        height: auto;
+    }
+
+    .about {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .services,
+    .expertise
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+
+    .about .text,
+    .services .list {
+        padding-right: 6%;
+    }
+
+    .about .text h2,
+    .services h2,
+    .expertise h2 {
+        font-size: 42px;
+    }
+
+    .about .text p,
+    .services p {
+        font-size: 18px;
+    }
+
+    .about .image img,
+    .services .image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .services ul {
+        margin-top: 30px;
+    }
+
+    .services li {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 60px 10%;
+    }
+}
