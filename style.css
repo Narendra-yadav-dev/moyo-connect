@@ -43,7 +43,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 15% 6%;
     position: relative;
 }
 
@@ -61,21 +60,24 @@ h3 {
     margin-bottom: 10px;
 }
 
-.logo-section img {
-    width: 220px;
-    height: 250px;
+.logo-image img {
+    width: 205px;
+    height: 205px;
     margin-right: 15px;
-
+    object-fit: fill;
 }
 
-.logo-section .text {
-    font-size: 26px;
-    font-family: 'Playfair Display', serif;
+.logo-section .text p {
+    margin-top: 45px;
+}
+.logo-section .text span {
+    font-size: 23px;
+    font-family: 'auto';
     letter-spacing: 1px;
     color: rgb(205, 173, 125);
     line-height: 1.2;
     padding-left: 50px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* Headings and Text */
@@ -111,9 +113,7 @@ h3 {
     color: #1a1a1a;
     font-weight: bold;
     text-transform: uppercase;
-    border: none;
     text-decoration: none;
-    border-radius: 2px;
     transition: background 0.3s ease;
     letter-spacing: 1px;
     width: 200px;
@@ -134,7 +134,7 @@ h3 {
 
 .about .text {
     flex: 1;
-    padding: 80px 10% 0 20%;
+    padding: 80px 10% 0 10%;
     letter-spacing: -0.04em;
 }
 
@@ -176,12 +176,11 @@ h3 {
     flex: 1;
     display: flex;
     justify-content: center;
-    padding: 80px 22% 0 0;
+    padding: 80px 10% 0 0;
 }
 
 .about .image img {
-    width: 488.842px;
-    height: 688.51px;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -189,12 +188,12 @@ h3 {
 /* ---------- EXPERTISE SECTION ---------- */
 .expertise {
     background-image: linear-gradient(45deg, #FBFBFB, #9B9B9B);
-    padding: 0 15%;
 }
 
 .expertise h2 {
     font-size: 50px;
     color: rgb(34, 35, 68);
+    padding-left: 5%;
 }
 
 .expertise-content {
@@ -221,11 +220,12 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    margin-bottom: 5%;
 }
 
 .services .image {
     flex: 1 1 40%;
-    padding: 8% 0 0 20%;
+    padding: 8% 0 0 10%;
 }
 
 .services .image img {
@@ -236,7 +236,7 @@ h3 {
 
 .services .list {
     flex: 1 1 50%;
-    padding: 8% 0 0 2%;
+    padding: 8% 0 0 10%;
 }
 
 .services ul {
@@ -260,16 +260,8 @@ h3 {
     line-height: 1.4;
     transition: all 0.3s ease;
 }
-
-.services li::before {
-    content: "🗎";
-    font-size: 36px;
-    /* larger icon */
-    color: #CDAD7D;
-    /* icon color */
-    flex-shrink: 0;
-    /* prevent icon from resizing */
-    transition: transform 0.3s ease, color 0.3s ease;
+.services li img {
+    height: 50px;
 }
 
 .services li:hover {
@@ -337,6 +329,9 @@ h3 {
     margin-bottom: 12px;
     font-size: 20px;
     font-weight: 500;
+}
+.contact-us li img {
+    height: 50px;
 }
 
 .contact-us .icon {
@@ -436,19 +431,27 @@ h3 {
 
 /* ---------- RESPONSIVE ---------- */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    /* ---------- HERO SECTION ---------- */
     .hero {
         padding: 8% 10%;
         text-align: center;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .logo-section {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 10px;
     }
 
     .logo-section img {
-        width: 180px;
+        width: 200px;
         height: auto;
         margin-bottom: 10px;
     }
@@ -457,78 +460,189 @@ h3 {
         padding-left: 0;
     }
 
+    .logo-section .text span {
+        font-size: 18px;
+        padding-left: 0;
+    }
+
     .img_text {
         position: relative;
         left: 0;
-        top: 0px;
+        top: 0;
         font-family: 'Open Sans';
-        margin-bottom: 50px;
-    }
-
-    .about .text {
-        flex: 1;
-        padding: 80px 10% 0 10%;
-        letter-spacing: -0.04em;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 28px;
+        padding-left: 0;
     }
 
-    .hero p {
-        font-size: 20px;
+    .hero .img_text p {
+        font-size: 18px;
+        padding-left: 0;
     }
 
-    .about,
-    .services,
-    .expertise-content {
+    .btn_type .btn {
+        width: auto;
+        padding: 10px 25px;
+    }
+
+
+    /* ---------- ABOUT SECTION ---------- */
+    .about {
+        display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 0 5%;
+        margin-top: 50px;
     }
 
-    .about .image,
-    .services .image {
-        padding: 0;
+    .about .text {
+        order: 1;
+        padding: 40px 8%;
+    }
+
+    .about .image {
+        order: 2;
+        display: flex;
         justify-content: center;
     }
 
     .about .image img {
-        width: 85%;
+        width: 90%;
         height: auto;
-        padding-left: 0;
-        margin-left: 60px;
+        margin: 0 0 0 35%;
     }
 
-    .services .image img {
-        width: 85%;
-        height: 600px;
-        padding-left: 0;
-        margin-top: 30px;
+
+    /* ---------- SERVICES SECTION ---------- */
+    .services {
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .services h2 {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    .services .list {
+        flex: 1 1 100%;
+        padding: 0 40px;
     }
 
     .services ul {
-        list-style: none;
-        margin-top: 50px;
-        font-family: 'Open Sans', sans-serif;
-        padding: 0;
+        margin-top: 20px;
     }
 
+    .services li {
+        font-size: 16px;
+        margin-bottom: 18px;
+        line-height: 1.6;
+        display: flex;
+        align-items: center;
+    }
+
+    .services li img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .services .image {
+        flex: 1 1 40%;
+        padding: 10% 0 0 0;
+    }
+
+    .services .image img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+
+    /* ---------- EXPERTISE SECTION ---------- */
     .expertise {
         padding: 0 8%;
+        background: linear-gradient(45deg, #FAFAFA, #9B9B9B);
     }
 
     .expertise h2 {
-        font-size: 50px;
-        color: rgb(34, 35, 68);
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .expertise-box {
-        background: rgb(205, 173, 125);
-        padding: 30px;
-        flex: 1 1 45%;
-        text-align: start;
+        padding: 15px 10px 25px 10px;
+    }
+
+    .expertise-box ul {
+        font-size: 18px;
+    }
+
+    .expertise-box ul li {
+        padding: 10px 0 0 20px;
+    }
+
+    .expertise-box p {
+        padding: 0 10px;
+    }
+
+
+    /* ---------- FOOTER SECTION ---------- */
+    .footer {
+        padding: 50px 5%;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .footer h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 26px;
+        margin-top: 0;
+        color: #C2A264;
+    }
+
+    .contact-us li {
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-us .icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .contact-us .icon img {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .follow-online .accessibility-note {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-circle img {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -547,6 +661,10 @@ h3 {
         text-align: center;
     }
 
+    .hero-content {
+        /* margin-left: 40px; */
+    }
+
     .logo-section img {
         width: 200px;
         height: auto;
@@ -559,6 +677,11 @@ h3 {
         margin-right: 30px;
     }
 
+    .logo-section .text span {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
     .img_text {
         position: relative;
         left: 0;
@@ -569,11 +692,13 @@ h3 {
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 26px;
+        padding-left: 20px;
     }
 
-    .hero p {
-        font-size: 20px;
+    .hero .img_text p {
+        font-size: 18px;
+        padding-left: 20px;
     }
 
     .btn_type .btn {
@@ -590,7 +715,6 @@ h3 {
     .about .text {
         order: 1;
         padding: 50px 8%;
-        margin-right: 30px;
     }
 
     .about .image {
@@ -600,7 +724,7 @@ h3 {
     }
 
     .about .image img {
-        width: 90%;
+        width: 100%;
         height: auto;
         margin-left: 80px;
     }
@@ -623,13 +747,17 @@ h3 {
         margin-bottom: 20px;
     }
 
+    .services li img {
+        height: 40px;
+    }
+
     .services li::before {
         font-size: 28px;
     }
 
     .services .image {
         flex: 1 1 40%;
-        padding: 8% 0 0 15%;
+        padding: 15% 0 0 18%;
     }
 
     .services .image img {
@@ -639,113 +767,54 @@ h3 {
     }
 
     .expertise h2 {
-        font-size: 38px;
+        font-size: 25px;
         text-align: center;
         margin-right: 30px;
     }
-
+    .expertise-box{
+        padding: 10px 0 25px 0;
+    }
     .expertise-box ul {
         font-size: 20px;
+    }
+    .expertise-box ul li {
+        padding: 15px 0 0 15px;
+    }
+    .expertise-box p{
+        padding: 0 7px 0 7px;
     }
 
     /* Footer Responsive */
     .footer {
-        padding: 50px 8%;
+        padding: 0 5%;
+    }
+    .footer-container{
+        display: inline-block;
     }
 
-    .footer-container {
-        flex-direction: column;
-        gap: 40px;
+    .footer h3{
+        font-family: 'Playfair Display';
+        font-size: 30px;
+        margin-top: 15%;
     }
-
-    .footer-column h3 {
-        font-size: 28px;
-    }
-
-    .contact-us li,
-    .office-hours p,
-    .follow-online p {
-        font-size: 18px;
-    }
-
-    .social-icons {
-        justify-content: flex-start;
-    }
-
-    .social-circle {
-        width: 35px;
-        height: 35px;
-    }
-
-    .social-circle img {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-/* ------------------------------
-   SMALL PHONES (<=480px)
------------------------------- */
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .about .text h2 {
-        font-size: 22px;
-    }
-
-    .about .text p {
+    .contact-us li{
         font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 0;
     }
-
-    .services h2 {
-        font-size: 28px;
+    .contact-us .icon{
+        width: 55px;   /* consistent size box for all icons */
+        height: 55px;
+        margin-right: 15px;
     }
-
-    .services li {
+    .contact-us .icon img{
+        width: auto;
+        height: 100%;  /* make image fill height evenly */
+        object-fit: contain;
+    }
+    .follow-online .accessibility-note{
         font-size: 15px;
-    }
-
-    .expertise h2 {
-        font-size: 28px;
-    }
-
-    .expertise-box ul {
-        font-size: 16px;
-    }
-
-    /* Footer Small Devices */
-    .footer {
-        padding: 35px 5%;
-    }
-
-    .footer-column h3 {
-        font-size: 22px;
-    }
-
-    .contact-us li,
-    .office-hours p,
-    .follow-online p {
-        font-size: 15px;
-    }
-
-    .social-circle {
-        width: 32px;
-        height: 32px;
-    }
-
-    .social-circle img {
-        width: 18px;
-        height: 18px;
-    }
-
-    .footer-bottom {
-        font-size: 12px;
+        line-height: 1.8;
     }
 }
 
@@ -758,66 +827,153 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 15% 6%;
     }
 
     .hero-content {
         max-width: 100%;
         width: 600px;
+        margin-bottom: 100px;
     }
 
     .hero h1 {
-        font-size: 54px;
+        font-size: 70px;
+        font-family: auto;
     }
 
     .hero p {
-        font-size: 24px;
+        font-size: 27px;
+        margin-right: 20%;
+        font-family: sans-serif;
     }
 
     .about {
         display: flex;
         align-items: flex-start;
-        margin-top: 70px;
+        margin-top: 5%;
     }
 
-    .expertise {
-        background-image: linear-gradient(45deg, #FBFBFB, #9B9B9B);
-        padding: 0 15%;
+   .expertise {
+        background: linear-gradient(to right, #ffffff 0%, #9b9b9b 50%, #9b9b9b 100%);
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .expertise h2 {
+        font-size: 48px;
+        margin-left: 5%;
+    }
+    .expertise .expertise-content .expertise-box {
+        padding: 40px 15px 30px 10px;
     }
 
+    .expertise-box ul li {
+        padding-left: 20px;
+    }
+
+    .expertise-box p {
+        padding: 0;
+        font-size: 27px;
+        line-height: 38px;
+        color: rgb(34, 35, 68);
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
     .services {
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
+        background-color: #F4F1EC;
+        height: 780px;
     }
 
-    .about .text,
-    .services .list {
-        padding-right: 8%;
-        margin-bottom: 30px;
+    .about .text{
+        padding: 80px 0 0 10%;
+    }
+   
+    .about .text h2{
+        font-size: 33px;
+        font-family: auto;
+        padding-right: 20%;
+    }
+    .services h2{
+        font-size: 50px;
+        font-weight: 500;
+        font-family: 'Playfair Display';
     }
 
-    .about .text h2,
-    .services h2,
-    .expertise h2 {
-        font-size: 48px;
+    .about .text p{
+        font-size: 21px;
+        padding-right: 20%;
+        font-family: sans-serif;
+        font-weight: lighter;
     }
-
-    .about .text p,
     .services p {
-        font-size: 19px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+    .about .image {
+        padding: 80px 10% 0 0;
+    }
+    .about .image img{
+        width: 100%;
+        height: 650px;
+    }
+    .services .image {
+        padding: 10% 0 0 10%;
+    }
+    .services .image img {
+        width: 110%;
+        height: 50%;
+        object-fit: none;
+    }
+    .services .list {
+        padding: 10% 0 0 8%;
     }
 
-    .about .image img,
-    .services .image img {
-        width: 92%;
-        height: auto;
+    .services ul {
+        font-family: auto;
+        margin-top: 15%;
     }
+
+    .services li {
+        font-size: 22px;
+        gap: 30px;
+    }
+    .services li img {
+        height: 64px;
+        width: 48px;
+    }
+
 
     /* Footer large screen */
     .footer {
-        margin: 0 auto;
-        padding: 70px 16%;
+        padding: 70px 5%;
+    }
+
+    .footer h3{
+        font-family: 'Playfair Display';
+        font-size: 30px;
+    }
+    .contact-us li{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    .contact-us .icon{
+        width: 55px;   /* consistent size box for all icons */
+        height: 55px;
+        margin-right: 15px;
+    }
+    .contact-us .icon img{
+        width: auto;
+        height: 100%;  /* make image fill height evenly */
+        object-fit: contain;
+    }
+    .follow-online .accessibility-note{
+        font-size: 15px;
+        line-height: 1.8;
     }
 }
 
@@ -826,69 +982,156 @@ h3 {
 ------------------------------ */
 @media (min-width: 1024px) and (max-width: 1351px) {
     .hero {
-        padding: 5% 12%;
-        background-size: cover;
+        background: linear-gradient(rgba(10, 10, 30, 0.7), rgba(10, 10, 30, 0.7)), url(images/banner.png) center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        width: 600px;
+        margin-bottom: 100px;
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 70px;
+        font-family: auto;
     }
 
     .hero p {
-        font-size: 20px;
-    }
-
-    .logo-section img {
-        width: 200px;
-        height: auto;
+        font-size: 27px;
+        margin-right: 20%;
+        font-family: sans-serif;
     }
 
     .about {
         display: flex;
         align-items: flex-start;
-        margin-top: 70px;
-        margin-bottom: 30px;
+        margin-top: 5%;
     }
 
-    .services,
-    .expertise
-    {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 5%;
+   .expertise {
+        background: linear-gradient(to right, #ffffff 0%, #9b9b9b 50%, #9b9b9b 100%);
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-
-    .about .text,
-    .services .list {
-        padding-right: 6%;
-    }
-
-    .about .text h2,
-    .services h2,
+    
     .expertise h2 {
-        font-size: 42px;
+        font-size: 48px;
+        margin-left: 5%;
+    }
+    .expertise .expertise-content .expertise-box {
+        padding: 40px 15px 30px 10px;
     }
 
-    .about .text p,
+    .expertise-box ul li {
+        padding-left: 20px;
+    }
+
+    .expertise-box p {
+        padding: 0;
+        font-size: 27px;
+        line-height: 38px;
+        color: rgb(34, 35, 68);
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        background-color: #F4F1EC;
+        height: 780px;
+    }
+
+    .about .text{
+        padding: 80px 0 0 10%;
+    }
+   
+    .about .text h2{
+        font-size: 33px;
+        font-family: auto;
+        padding-right: 20%;
+    }
+    .services h2{
+        font-size: 50px;
+        font-weight: 500;
+        font-family: 'Playfair Display';
+    }
+
+    .about .text p{
+        font-size: 21px;
+        padding-right: 20%;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
     .services p {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: sans-serif;
     }
-
-    .about .image img,
+    .about .image {
+        padding: 80px 10% 0 0;
+    }
+    .about .image img{
+        width: 100%;
+        height: 650px;
+    }
+    .services .image {
+        padding: 10% 0 0 10%;
+    }
     .services .image img {
-        width: 90%;
-        height: auto;
+        width: 110%;
+        height: 70%;
+        object-fit: none;
+    }
+    .services .list {
+        padding: 10% 0 0 8%;
     }
 
     .services ul {
-        margin-top: 30px;
+        font-family: auto;
+        margin-top: 15%;
     }
 
     .services li {
-        font-size: 18px;
+        font-size: 22px;
+        gap: 30px;
+    }
+    .services li img {
+        height: 64px;
+        width: 48px;
     }
 
+
+    /* Footer large screen */
     .footer {
-        padding: 60px 10%;
+        padding: 70px 5%;
+    }
+
+    .footer h3{
+        font-family: 'Playfair Display';
+        font-size: 30px;
+    }
+    .contact-us li{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    .contact-us .icon{
+        width: 55px;   /* consistent size box for all icons */
+        height: 55px;
+        margin-right: 15px;
+    }
+    .contact-us .icon img{
+        width: auto;
+        height: 100%;  /* make image fill height evenly */
+        object-fit: contain;
+    }
+    .follow-online .accessibility-note{
+        font-size: 15px;
+        line-height: 1.8;
     }
 }
